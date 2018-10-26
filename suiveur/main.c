@@ -95,7 +95,7 @@ int main(void) {
 
    // WDTCTL = WDTPW | WDTHOLD;	// Stop watchdog timer
 
-	WDTCTL = WDT_MDLY_0_5; // WDT 0.5ms interval timer
+	WDTCTL = WDT_MDLY_0_5; /* WDT 0.5ms interval timer   *****activation du watchdog***** */
     IE1 |= WDTIE; // Enable WDT interrupt
 
 
